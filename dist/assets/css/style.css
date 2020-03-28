@@ -126,6 +126,10 @@ textarea:focus {
   box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
 }
 
+.button[disabled] {
+  opacity: 0.5;
+}
+
 .section_header {
   margin-bottom: 8rem;
   text-align: center;
@@ -917,6 +921,10 @@ textarea:focus {
 .popup_calc_content h3 {
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+
+.popup_calc_content .balcon_icons_img {
+  cursor: pointer;
 }
 
 .popup_calc_content .balcon_icons {
