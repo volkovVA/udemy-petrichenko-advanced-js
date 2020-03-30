@@ -1,7 +1,7 @@
 const modals = () => {
   let btnPressed = false;
 
-  function bindModal(triggerSelector, modalSelector, closeSelector, destroy = "false") {
+  function bindModal(triggerSelector, modalSelector, closeSelector, destroy = false) {
     const trigger = document.querySelectorAll(triggerSelector),
           modal = document.querySelector(modalSelector),
           close = document.querySelector(closeSelector),
@@ -86,6 +86,8 @@ const modals = () => {
 
     return scrollWidth;
   };
+
+  // Удаление подарка автоматическим кликом при скролле до конца страницы
 
   function openByScroll(selector) {
     let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
