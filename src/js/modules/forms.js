@@ -3,7 +3,6 @@ import { postData } from '../services/requests';
 const forms = () => {
   const form = document.querySelectorAll('form'),
         inputs = document.querySelectorAll('input'),
-        windows = document.querySelectorAll('[data-modal]'),
         upload = document.querySelectorAll('[name="upload"]');
 
   const message = {
@@ -62,6 +61,17 @@ const forms = () => {
       let textMessage = document.createElement('div');
       textMessage.textContent = message.loading;
       statusMessage.appendChild(textMessage);
+
+      // Передача данных на сервер из элемента div
+
+      if (item.classList.contains('calc-form')) {
+        const input = document.createElement('input'),
+              result = document.querySelector('.calc-price');
+        input.setAttribute('name', 'total');
+        input.setAttribute('type', 'hidden');
+        item.appendChild(input);
+        input.value = result.textContent;
+      };
 
       const formData = new FormData(item);
       let api;
