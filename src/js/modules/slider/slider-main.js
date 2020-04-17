@@ -1,9 +1,8 @@
-export default class Slider {
-  constructor(page, btns) {
-    this.page = document.querySelector(page);
-    this.slides = this.page.children;
-    this.btns = document.querySelectorAll(btns);
-    this.slideIndex = 1;
+import Slider from './slider';
+
+export default class MainSlider extends Slider {
+  constructor(btns) {
+    super(btns);
   }
 
   showSlides(n) {
@@ -34,7 +33,7 @@ export default class Slider {
     });
 
     this.slides[this.slideIndex - 1].style.display = 'block';
-    this.slides[this.slideIndex - 1].classList.add('animated', 'fadeInUp');
+    // this.slides[this.slideIndex - 1].classList.add('animated', 'fadeInUp');
   }
 
   plusSlides(n) {
