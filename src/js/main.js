@@ -1,2 +1,1 @@
 import $ from './lib/lib';
-
