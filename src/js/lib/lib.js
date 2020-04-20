@@ -10,5 +10,6 @@ import './components/dropdown';
 import './components/modal';
 import './components/tab';
 import './components/accordion';
+import './components/carousel';
 
 export default $;
