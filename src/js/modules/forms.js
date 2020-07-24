@@ -38,13 +38,13 @@ const forms = (state) => {
       }, 1000);
     });
     document.body.style.overflow = '';
-  }
+  };
 
   function clearState() {
     for (const prop of Object.keys(state)) {
       delete state[prop];
     }
-  }
+  };
 
   form.forEach(item => {
     item.addEventListener('submit', (e) => {
