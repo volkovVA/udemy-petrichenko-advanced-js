@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <button class="btn btn-primary m20" id="first">Fade out first text</button>
+    <button class="btn btn-dark m20" data-count="second">Fade out second text</button>
+    <button class="btn btn-warning m20">Fade out all texts</button>
+
+    <div class="text mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sint assumenda cum dignissimos quos repellat impedit error cumque iure laudantium et, autem nostrum perferendis optio consequatur alias magni. Pariatur rem exercitationem nam, debitis quasi doloribus accusantium. Recusandae hic maiores, sapiente ut, possimus necessitatibus quae sunt similique id, dolorum magnam voluptatibus!</div>
+    <!-- Dropdown menu -->
+    <!-- <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" id="dropdownMenuBtn">Dropdown button</button>
+      <div class="dropdown-menu" data-toggle-id="dropdownMenuBtn">
+        <a href="#" class="dropdown-item">Action</a>
+        <a href="#" class="dropdown-item">Action #2</a>
+        <a href="#" class="dropdown-item">Action #3</a>
+      </div>
+    </div> -->
+
+    <div class="wrap mb-10"></div>
+
+    <!-- Card -->
+
+    <div class="goods d-flex f-space-around">
+      <div class="card">
+        <img class="card-img" src="https://avatars.mds.yandex.net/get-pdb/2856205/8874cae3-0166-4e36-b4d9-1c60ab5ed1b1/s1200" alt="photo">
+        <div class="card-body">
+          <h3 class="card-title">Card title</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ab velit repudiandae soluta fuga obcaecati illo saepe praesentium repellat
+            nisi itaque deleniti expedita voluptatibus est corrupti, ipsum cumque esse
+            impedit dolor reiciendis nostrum sint totam, aspernatur fugiat! Officia
+            commodi voluptatibus, vitae, in fugiat tempore voluptate cum, suscipit
+            dolor recusandae esse doloribus delectus dolore reprehenderit minima.
+          </p>
+          <a href="#" id="trigger" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="https://avatars.mds.yandex.net/get-pdb/2856205/8874cae3-0166-4e36-b4d9-1c60ab5ed1b1/s1200" alt="photo">
+        <div class="card-body">
+          <h3 class="card-title">Card title</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ab velit repudiandae soluta fuga obcaecati illo saepe praesentium repellat
+            nisi itaque deleniti expedita voluptatibus est corrupti, ipsum cumque esse
+            impedit dolor reiciendis nostrum sint totam, aspernatur fugiat! Officia
+            commodi voluptatibus, vitae, in fugiat tempore voluptate cum, suscipit
+            dolor recusandae esse doloribus delectus dolore reprehenderit minima.
+          </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- <div class="modal" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button  class="close" data-close>
+            <span>&times;</span>
+          </button>
+          <div class="modal-header">
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Id deleniti cumque iste exercitationem maxime quas? Cumque quod, expedita sunt
+            facilis voluptatum fugit rerum quae ipsum laborum doloremque non adipisci
+            quisquam?</div>
+          <div class="modal-footer">
+            <div class="button btn btn-danger" data-close>Close</div>
+            <button class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Tabs -->
+
+    <div class="tab mt-20 block-center">
+      <div class="tab-panel" data-tabpanel>
+        <div class="tab-item tab-item--active">Content 1</div>
+        <div class="tab-item">Content 2</div>
+        <div class="tab-item">Content 3</div>
+      </div>
+      <div class="tab-content tab-content--active">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reiciendis, reprehenderit!
+        <br> <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ea.
+      </div>
+      <div class="tab-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reiciendis, reprehenderit!!!!!!!!
+        <br> <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ea!!!!
+      </div>
+      <div class="tab-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reiciendis, reprehenderit!!!!!!!!!!!!
+        <br> <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ea!!!!!!!!!!
+      </div>
+    </div>
+
+
+    <!-- Accordion -->
+
+    <div class="accordion mt-20 mb-10 block-center">
+      <div class="accordion-head">
+        <span>Colapse first element</span>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, nesciunt.
+        </div>
+      </div>
+      <div class="accordion-head">
+        <span>Colapse second element</span>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, nesciunt.
+        </div>
+      </div>
+      <div class="accordion-head">
+        <span>Colapse third element</span>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, nesciunt.
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel mb-10" id="example">
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0"></li>
+        <li data-slide-to="1"></li>
+        <li data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-slides">
+          <div class="carousel-item">
+            <img src="https://avatars.mds.yandex.net/get-pdb/2837529/17d0c2ff-7607-4968-976e-c49d8b6007e4/s1200" alt="photo">
+          </div>
+          <div class="carousel-item">
+            <img src="https://avatars.mds.yandex.net/get-pdb/225396/d8e50482-6a6c-4ee3-8351-55422d75058d/s1200" alt="photo">
+          </div>
+          <div class="carousel-item">
+            <img src="https://avatars.mds.yandex.net/get-pdb/28866/8af71988-68b7-4437-94e4-0321999fb823/s1200" alt="photo">
+          </div>
+        </div>
+      </div>
+      <a href="" class="carousel-prev" data-slide="prev">
+        <span class="carousel-prev-icon">&lt;</span>
+      </a>
+      <a href="" class="carousel-next" data-slide="next">
+        <span class="carousel-next-icon">&gt;</span>
+      </a>
+    </div>
+
+  </div>
+    <script src='script.js'></script>
+</body>
+</html>
